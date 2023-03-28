@@ -17,3 +17,9 @@ func main() {
 }
 
     defer db.Close()
+
+    type Pedido struct {
+        ID           int64   `db:"id"`
+        NomeCliente  string  `db:"nome_cliente"`
+        Valor        float64 `db:"valor"`
+    }
